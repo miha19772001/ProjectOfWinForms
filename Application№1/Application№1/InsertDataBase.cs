@@ -27,5 +27,14 @@ namespace Application_1
             connection = new SqlConnection(ConfigurationManager.ConnectionStrings["BookShop"].ConnectionString);
             connection.Open();
         }
+
+        private void SearchInDB_Click(object sender, EventArgs e)
+        {
+            SqlDataAdapter adapter = new SqlDataAdapter($"SELECT Writer.Name FROM Writer", connection);
+            DataSet dataSet = new DataSet();
+            adapter.Fill(dataSet);
+            dataGridView1.DataSource = dataSet.Tables[0];
+        }
     }
+    
 }

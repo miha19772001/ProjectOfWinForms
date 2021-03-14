@@ -12,6 +12,9 @@ using FontAwesome.Sharp;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
 
+using System.Configuration;
+using System.Data.SqlClient;
+
 
 namespace Application_1
 {
@@ -30,10 +33,7 @@ namespace Application_1
             panelMenu.Controls.Add(leftBorderBtn);
 
             //Form
-            /*  this.Text = string.Empty;
-              this.ControlBox = false;
-              this.DoubleBuffered = true; */
-
+           
             //Inserts
             insertInMainMenu1.BringToFront();
             
@@ -118,6 +118,8 @@ namespace Application_1
         private void BtnDataBase_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color4);
+            insertDataBase1.BringToFront();
+            
         }
 
         private void BtnAboutUs_Click(object sender, EventArgs e)

@@ -47,6 +47,7 @@ namespace Application_1
             this.materialContextMenuStrip1 = new MaterialSkin.Controls.MaterialContextMenuStrip();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
             this.insertInMainMenu1 = new Application_1.InsertInMainMenu();
+            this.insertDataBase1 = new Application_1.InsertDataBase();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnBook)).BeginInit();
             this.panelTop.SuspendLayout();
@@ -311,17 +312,26 @@ namespace Application_1
             this.insertInMainMenu1.Size = new System.Drawing.Size(764, 523);
             this.insertInMainMenu1.TabIndex = 6;
             // 
+            // insertDataBase1
+            // 
+            this.insertDataBase1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
+            this.insertDataBase1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.insertDataBase1.Location = new System.Drawing.Point(200, 58);
+            this.insertDataBase1.Name = "insertDataBase1";
+            this.insertDataBase1.Size = new System.Drawing.Size(764, 523);
+            this.insertDataBase1.TabIndex = 7;
+            // 
             // FormMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(964, 581);
+            this.Controls.Add(this.insertDataBase1);
             this.Controls.Add(this.insertInMainMenu1);
             this.Controls.Add(this.panelTop);
             this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Name = "FormMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMainMenu";
@@ -352,5 +362,6 @@ namespace Application_1
         private FontAwesome.Sharp.IconButton BtnLinkTwiter;
         private FontAwesome.Sharp.IconButton BtnLinkInstagram;
         private InsertInMainMenu insertInMainMenu1;
+        private InsertDataBase insertDataBase1;
     }
 }

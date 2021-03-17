@@ -12,8 +12,8 @@ using FontAwesome.Sharp;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
 
-using System.Configuration;
-using System.Data.SqlClient;
+
+
 
 
 namespace Application_1
@@ -33,19 +33,19 @@ namespace Application_1
             panelMenu.Controls.Add(leftBorderBtn);
 
             //Form
-           
+
             //Inserts
             insertInMainMenu1.BringToFront();
-            
+
         }
-       
+
         private void MoveForm(object sender, MouseEventArgs e)
         {
             panelTop.Capture = false;
             Message m = Message.Create(Handle, 0xa1, new IntPtr(2), IntPtr.Zero);
             WndProc(ref m);
         }
-      
+
         //Structs
         private struct RGBColors
         {
@@ -85,7 +85,7 @@ namespace Application_1
             }
         }
 
-       private void DisableButton()
+        private void DisableButton()
         {
             if (currentBtn != null)
             {
@@ -98,7 +98,7 @@ namespace Application_1
             }
         }
 
-        
+
         #region Button control
         private void BtnHome_Click(object sender, EventArgs e)
         {
@@ -119,7 +119,7 @@ namespace Application_1
         {
             ActivateButton(sender, RGBColors.color4);
             insertDataBase1.BringToFront();
-            
+
         }
 
         private void BtnAboutUs_Click(object sender, EventArgs e)
@@ -128,7 +128,7 @@ namespace Application_1
         }
         #endregion 
 
-        private void BtnBook_Click(object sender, EventArgs e) 
+        private void BtnBook_Click(object sender, EventArgs e)
         {
             Reset();
 

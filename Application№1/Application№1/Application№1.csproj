@@ -74,12 +74,6 @@
     <Compile Include="InsertAboutUs.Designer.cs">
       <DependentUpon>InsertAboutUs.cs</DependentUpon>
     </Compile>
-    <Compile Include="InsertDataBase.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="InsertDataBase.Designer.cs">
-      <DependentUpon>InsertDataBase.cs</DependentUpon>
-    </Compile>
     <Compile Include="DB.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +86,12 @@
     <Compile Include="FormMainMenu.Designer.cs">
       <DependentUpon>FormMainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="InsertDataBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InsertDataBase.Designer.cs">
+      <DependentUpon>InsertDataBase.cs</DependentUpon>
+    </Compile>
     <Compile Include="InsertInMainMenu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -103,14 +103,14 @@
     <EmbeddedResource Include="InsertAboutUs.resx">
       <DependentUpon>InsertAboutUs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InsertDataBase.resx">
-      <DependentUpon>InsertDataBase.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DB.resx">
       <DependentUpon>DB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMainMenu.resx">
       <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertDataBase.resx">
+      <DependentUpon>InsertDataBase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InsertInMainMenu.resx">
       <DependentUpon>InsertInMainMenu.cs</DependentUpon>

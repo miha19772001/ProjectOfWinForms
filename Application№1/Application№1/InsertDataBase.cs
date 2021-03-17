@@ -28,8 +28,6 @@ namespace Application_1
             connection.Open();
         }
 
-
-
         private void AddDB_Click(object sender, EventArgs e)
         {
 
@@ -40,21 +38,56 @@ namespace Application_1
 
 
             //Addition values in the DataBase "Writer"
-            var Date_of_birth_of_the_Writer = DateTime.Parse(textBoxDateOfBirth.Text);
-            var Date_of_death_of_the_Writer = DateTime.Parse(textBoxDateOfDeath.Text);
+
+            DateTime Date_of_birth_of_the_Writer;
+            DateTime Date_of_death_of_the_Writer;
+
+            if (textBoxDateOfBirth.Text != null)
+            {
+                try
+                {
+                    Date_of_birth_of_the_Writer = DateTime.Parse(textBoxDateOfBirth.Text);
+
+
+                    addWriter.Parameters.AddWithValue("Date_of_birth", $"{Date_of_birth_of_the_Writer.Month}/{Date_of_birth_of_the_Writer.Day}/{Date_of_birth_of_the_Writer.Year}");
+                }
+
+                catch (Exception)
+                {
+                    addWriter.Parameters.AddWithValue("Date_of_birth", "");
+
+                }
+            }
+
+            if (textBoxDateOfDeath.Text != null)
+            {
+                try
+                {
+                    Date_of_death_of_the_Writer = DateTime.Parse(textBoxDateOfDeath.Text);
+
+                    addWriter.Parameters.AddWithValue("Date_of_death", $"{Date_of_death_of_the_Writer.Month}/{Date_of_death_of_the_Writer.Day}/{Date_of_death_of_the_Writer.Year}");
+                }
+                catch (Exception)
+                {
+                    addWriter.Parameters.AddWithValue("Date_of_death", "");
+
+                }
+            }
+            // DateTime Date_of_birth_of_the_Writer = DateTime.Parse(textBoxDateOfBirth.Text);
+            // DateTime Date_of_death_of_the_Writer = DateTime.Parse(textBoxDateOfDeath.Text);
 
             addWriter.Parameters.AddWithValue("Surname", textBoxSurnameOfWriter.Text);
             addWriter.Parameters.AddWithValue("Name", textBoxNameOfWriter.Text);
             addWriter.Parameters.AddWithValue("Middle_Name", textBoxMiddleNameOfWriter.Text);
-            addWriter.Parameters.AddWithValue("Date_of_birth", $"{Date_of_birth_of_the_Writer.Month}/{Date_of_birth_of_the_Writer.Day}/{Date_of_birth_of_the_Writer.Year}");
-            addWriter.Parameters.AddWithValue("Date_of_death", $"{Date_of_death_of_the_Writer.Month}/{Date_of_death_of_the_Writer.Day}/{Date_of_death_of_the_Writer.Year}");
+            // addWriter.Parameters.AddWithValue("Date_of_birth", $"{Date_of_birth_of_the_Writer.Month}/{Date_of_birth_of_the_Writer.Day}/{Date_of_birth_of_the_Writer.Year}");
+            // addWriter.Parameters.AddWithValue("Date_of_death", $"{Date_of_death_of_the_Writer.Month}/{Date_of_death_of_the_Writer.Day}/{Date_of_death_of_the_Writer.Year}");
 
             //Addition values in the DataBase "Product"
             addProduct.Parameters.AddWithValue("Name", textBoxNameOfBook.Text);
             addProduct.Parameters.AddWithValue("Date_of_writing", textBoxDateOfWriting.Text);
             addProduct.Parameters.AddWithValue("Genre", textBoxGenre.Text);
 
-            MessageBox.Show(addWriter.ExecuteNonQuery().ToString());
+            MessageBox.Show(addProduct.ExecuteNonQuery().ToString());
 
 
 

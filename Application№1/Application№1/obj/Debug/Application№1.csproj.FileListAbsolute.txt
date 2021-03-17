@@ -15,5 +15,5 @@ E:\Рабочий стол\TargetProject\Application№1\Application№1\bin\Deb
 E:\Рабочий стол\TargetProject\Application№1\Application№1\obj\Debug\Application_1.InsertInMainMenu.resources
 E:\Рабочий стол\TargetProject\Application№1\Application№1\obj\Debug\Application_1.DB.resources
 E:\Рабочий стол\TargetProject\Application№1\Application№1\obj\Debug\Application_1.InsertAboutUs.resources
-E:\Рабочий стол\TargetProject\Application№1\Application№1\obj\Debug\Application_1.InsertDataBase.resources
 E:\Рабочий стол\TargetProject\Application№1\Application№1\obj\Debug\Application№1.csprojAssemblyReference.cache
+E:\Рабочий стол\TargetProject\Application№1\Application№1\obj\Debug\Application_1.InsertDataBase.resources

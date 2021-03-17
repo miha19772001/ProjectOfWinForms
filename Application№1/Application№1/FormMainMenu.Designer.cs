@@ -46,8 +46,8 @@ namespace Application_1
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.materialContextMenuStrip1 = new MaterialSkin.Controls.MaterialContextMenuStrip();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
-            this.insertInMainMenu1 = new Application_1.InsertInMainMenu();
             this.insertDataBase1 = new Application_1.InsertDataBase();
+            this.insertInMainMenu1 = new Application_1.InsertInMainMenu();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnBook)).BeginInit();
             this.panelTop.SuspendLayout();
@@ -304,14 +304,6 @@ namespace Application_1
             this.materialContextMenuStrip1.Name = "materialContextMenuStrip1";
             this.materialContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // insertInMainMenu1
-            // 
-            this.insertInMainMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
-            this.insertInMainMenu1.Location = new System.Drawing.Point(200, 58);
-            this.insertInMainMenu1.Name = "insertInMainMenu1";
-            this.insertInMainMenu1.Size = new System.Drawing.Size(764, 523);
-            this.insertInMainMenu1.TabIndex = 6;
-            // 
             // insertDataBase1
             // 
             this.insertDataBase1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
@@ -320,6 +312,14 @@ namespace Application_1
             this.insertDataBase1.Name = "insertDataBase1";
             this.insertDataBase1.Size = new System.Drawing.Size(764, 523);
             this.insertDataBase1.TabIndex = 7;
+            // 
+            // insertInMainMenu1
+            // 
+            this.insertInMainMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
+            this.insertInMainMenu1.Location = new System.Drawing.Point(200, 58);
+            this.insertInMainMenu1.Name = "insertInMainMenu1";
+            this.insertInMainMenu1.Size = new System.Drawing.Size(764, 523);
+            this.insertInMainMenu1.TabIndex = 6;
             // 
             // FormMainMenu
             // 

@@ -270,9 +270,13 @@ namespace Application_1
             // 
             // SearchInDB
             // 
-            this.SearchInDB.Location = new System.Drawing.Point(59, 411);
+            this.SearchInDB.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.SearchInDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SearchInDB.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SearchInDB.ForeColor = System.Drawing.Color.White;
+            this.SearchInDB.Location = new System.Drawing.Point(28, 435);
             this.SearchInDB.Name = "SearchInDB";
-            this.SearchInDB.Size = new System.Drawing.Size(75, 23);
+            this.SearchInDB.Size = new System.Drawing.Size(119, 45);
             this.SearchInDB.TabIndex = 5;
             this.SearchInDB.Text = "Search";
             this.SearchInDB.UseVisualStyleBackColor = true;

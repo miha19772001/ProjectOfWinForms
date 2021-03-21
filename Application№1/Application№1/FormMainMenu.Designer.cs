@@ -34,7 +34,7 @@ namespace Application_1
             this.BtnLinkTwiter = new FontAwesome.Sharp.IconButton();
             this.BtnLinkInstagram = new FontAwesome.Sharp.IconButton();
             this.BtnLinkFacebook = new FontAwesome.Sharp.IconButton();
-            this.BtnAboutUs = new FontAwesome.Sharp.IconButton();
+            this.BtnAboutMe = new FontAwesome.Sharp.IconButton();
             this.BtnDataBase = new FontAwesome.Sharp.IconButton();
             this.BtnBook = new System.Windows.Forms.PictureBox();
             this.BtnPopularly = new FontAwesome.Sharp.IconButton();
@@ -48,6 +48,10 @@ namespace Application_1
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
             this.insertDataBase1 = new Application_1.InsertDataBase();
             this.insertInMainMenu1 = new Application_1.InsertInMainMenu();
+            this.insertAboutMe1 = new Application_1.InsertAboutMe();
+            this.insertPopularly1 = new Application_1.InsertPopularly();
+            this.insertNovelty1 = new Application_1.InsertNovelty();
+            this.insertHome1 = new Application_1.InsertHome();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnBook)).BeginInit();
             this.panelTop.SuspendLayout();
@@ -60,7 +64,7 @@ namespace Application_1
             this.panelMenu.Controls.Add(this.BtnLinkTwiter);
             this.panelMenu.Controls.Add(this.BtnLinkInstagram);
             this.panelMenu.Controls.Add(this.BtnLinkFacebook);
-            this.panelMenu.Controls.Add(this.BtnAboutUs);
+            this.panelMenu.Controls.Add(this.BtnAboutMe);
             this.panelMenu.Controls.Add(this.BtnDataBase);
             this.panelMenu.Controls.Add(this.BtnBook);
             this.panelMenu.Controls.Add(this.BtnPopularly);
@@ -118,28 +122,28 @@ namespace Application_1
             this.BtnLinkFacebook.UseVisualStyleBackColor = true;
             this.BtnLinkFacebook.Click += new System.EventHandler(this.BtnLinkFacebook_Click);
             // 
-            // BtnAboutUs
+            // BtnAboutMe
             // 
-            this.BtnAboutUs.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(49)))), ((int)(((byte)(69)))));
-            this.BtnAboutUs.FlatAppearance.BorderSize = 0;
-            this.BtnAboutUs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAboutUs.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.BtnAboutUs.ForeColor = System.Drawing.Color.White;
-            this.BtnAboutUs.IconChar = FontAwesome.Sharp.IconChar.InfoCircle;
-            this.BtnAboutUs.IconColor = System.Drawing.Color.White;
-            this.BtnAboutUs.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnAboutUs.IconSize = 32;
-            this.BtnAboutUs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAboutUs.Location = new System.Drawing.Point(0, 435);
-            this.BtnAboutUs.Name = "BtnAboutUs";
-            this.BtnAboutUs.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.BtnAboutUs.Size = new System.Drawing.Size(200, 60);
-            this.BtnAboutUs.TabIndex = 3;
-            this.BtnAboutUs.Text = "AboutUs";
-            this.BtnAboutUs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAboutUs.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnAboutUs.UseVisualStyleBackColor = true;
-            this.BtnAboutUs.Click += new System.EventHandler(this.BtnAboutUs_Click);
+            this.BtnAboutMe.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(49)))), ((int)(((byte)(69)))));
+            this.BtnAboutMe.FlatAppearance.BorderSize = 0;
+            this.BtnAboutMe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAboutMe.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BtnAboutMe.ForeColor = System.Drawing.Color.White;
+            this.BtnAboutMe.IconChar = FontAwesome.Sharp.IconChar.InfoCircle;
+            this.BtnAboutMe.IconColor = System.Drawing.Color.White;
+            this.BtnAboutMe.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnAboutMe.IconSize = 32;
+            this.BtnAboutMe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAboutMe.Location = new System.Drawing.Point(0, 435);
+            this.BtnAboutMe.Name = "BtnAboutMe";
+            this.BtnAboutMe.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.BtnAboutMe.Size = new System.Drawing.Size(200, 60);
+            this.BtnAboutMe.TabIndex = 3;
+            this.BtnAboutMe.Text = "AboutMe";
+            this.BtnAboutMe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAboutMe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnAboutMe.UseVisualStyleBackColor = true;
+            this.BtnAboutMe.Click += new System.EventHandler(this.BtnAboutMe_Click);
             // 
             // BtnDataBase
             // 
@@ -321,16 +325,52 @@ namespace Application_1
             this.insertInMainMenu1.Size = new System.Drawing.Size(764, 523);
             this.insertInMainMenu1.TabIndex = 6;
             // 
+            // insertAboutMe1
+            // 
+            this.insertAboutMe1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
+            this.insertAboutMe1.Location = new System.Drawing.Point(200, 58);
+            this.insertAboutMe1.Name = "insertAboutMe1";
+            this.insertAboutMe1.Size = new System.Drawing.Size(764, 523);
+            this.insertAboutMe1.TabIndex = 8;
+            // 
+            // insertPopularly1
+            // 
+            this.insertPopularly1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
+            this.insertPopularly1.Location = new System.Drawing.Point(200, 58);
+            this.insertPopularly1.Name = "insertPopularly1";
+            this.insertPopularly1.Size = new System.Drawing.Size(764, 523);
+            this.insertPopularly1.TabIndex = 9;
+            // 
+            // insertNovelty1
+            // 
+            this.insertNovelty1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
+            this.insertNovelty1.Location = new System.Drawing.Point(200, 58);
+            this.insertNovelty1.Name = "insertNovelty1";
+            this.insertNovelty1.Size = new System.Drawing.Size(764, 523);
+            this.insertNovelty1.TabIndex = 10;
+            // 
+            // insertHome1
+            // 
+            this.insertHome1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
+            this.insertHome1.Location = new System.Drawing.Point(200, 58);
+            this.insertHome1.Name = "insertHome1";
+            this.insertHome1.Size = new System.Drawing.Size(764, 523);
+            this.insertHome1.TabIndex = 11;
+            // 
             // FormMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(964, 581);
-            this.Controls.Add(this.insertDataBase1);
-            this.Controls.Add(this.insertInMainMenu1);
             this.Controls.Add(this.panelTop);
             this.Controls.Add(this.panelMenu);
+            this.Controls.Add(this.insertInMainMenu1);
+            this.Controls.Add(this.insertNovelty1);
+            this.Controls.Add(this.insertPopularly1);
+            this.Controls.Add(this.insertAboutMe1);
+            this.Controls.Add(this.insertDataBase1);
+            this.Controls.Add(this.insertHome1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -346,7 +386,7 @@ namespace Application_1
 
         #endregion
         private System.Windows.Forms.Panel panelMenu;
-        private FontAwesome.Sharp.IconButton BtnAboutUs;
+        private FontAwesome.Sharp.IconButton BtnAboutMe;
         private FontAwesome.Sharp.IconButton BtnDataBase;
         private FontAwesome.Sharp.IconButton BtnPopularly;
         private FontAwesome.Sharp.IconButton BtnHome;
@@ -363,5 +403,9 @@ namespace Application_1
         private FontAwesome.Sharp.IconButton BtnLinkInstagram;
         private InsertInMainMenu insertInMainMenu1;
         private InsertDataBase insertDataBase1;
+        private InsertAboutMe insertAboutMe1;
+        private InsertPopularly insertPopularly1;
+        private InsertNovelty insertNovelty1;
+        private InsertHome insertHome1;
     }
 }

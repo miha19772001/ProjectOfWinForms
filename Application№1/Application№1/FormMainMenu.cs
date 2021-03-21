@@ -32,8 +32,6 @@ namespace Application_1
             leftBorderBtn.Size = new Size(10, 60);
             panelMenu.Controls.Add(leftBorderBtn);
 
-            //Form
-
             //Inserts
             insertInMainMenu1.BringToFront();
 
@@ -103,16 +101,19 @@ namespace Application_1
         private void BtnHome_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            insertHome1.BringToFront();
         }
 
         private void BtnNovelty_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
+            insertNovelty1.BringToFront();
         }
 
         private void BtnPopularly_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
+            insertPopularly1.BringToFront();
         }
 
         private void BtnDataBase_Click(object sender, EventArgs e)
@@ -122,10 +123,12 @@ namespace Application_1
 
         }
 
-        private void BtnAboutUs_Click(object sender, EventArgs e)
+        private void BtnAboutMe_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
+            insertAboutMe1.BringToFront();
         }
+
         #endregion 
 
         private void BtnBook_Click(object sender, EventArgs e)
@@ -165,5 +168,6 @@ namespace Application_1
             Process.Start("https://twitter.com");
         }
         #endregion
+
     }
 }

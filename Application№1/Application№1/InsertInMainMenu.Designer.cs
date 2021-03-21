@@ -30,85 +30,85 @@ namespace Application_1
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InsertInMainMenu));
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.tagline1 = new System.Windows.Forms.Label();
-            this.tagline2 = new System.Windows.Forms.Label();
-            this.tagline3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            this.iconPictureBoxBooks = new FontAwesome.Sharp.IconPictureBox();
+            this.taglineMiddle = new System.Windows.Forms.Label();
+            this.taglineTop = new System.Windows.Forms.Label();
+            this.taglineBottom = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBoxBooks)).BeginInit();
             this.SuspendLayout();
             // 
-            // iconPictureBox1
+            // iconPictureBoxBooks
             // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
-            this.iconPictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("iconPictureBox1.BackgroundImage")));
-            this.iconPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 222;
-            this.iconPictureBox1.Location = new System.Drawing.Point(367, 239);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(277, 222);
-            this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconPictureBox1.TabIndex = 3;
-            this.iconPictureBox1.TabStop = false;
+            this.iconPictureBoxBooks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
+            this.iconPictureBoxBooks.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("iconPictureBoxBooks.BackgroundImage")));
+            this.iconPictureBoxBooks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.iconPictureBoxBooks.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBoxBooks.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconPictureBoxBooks.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBoxBooks.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBoxBooks.IconSize = 222;
+            this.iconPictureBoxBooks.Location = new System.Drawing.Point(367, 239);
+            this.iconPictureBoxBooks.Name = "iconPictureBoxBooks";
+            this.iconPictureBoxBooks.Size = new System.Drawing.Size(277, 222);
+            this.iconPictureBoxBooks.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconPictureBoxBooks.TabIndex = 3;
+            this.iconPictureBoxBooks.TabStop = false;
             // 
-            // tagline1
+            // taglineMiddle
             // 
-            this.tagline1.AutoSize = true;
-            this.tagline1.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tagline1.ForeColor = System.Drawing.Color.White;
-            this.tagline1.Location = new System.Drawing.Point(140, 110);
-            this.tagline1.Name = "tagline1";
-            this.tagline1.Size = new System.Drawing.Size(532, 56);
-            this.tagline1.TabIndex = 4;
-            this.tagline1.Text = "Лучшая литература.";
+            this.taglineMiddle.AutoSize = true;
+            this.taglineMiddle.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.taglineMiddle.ForeColor = System.Drawing.Color.White;
+            this.taglineMiddle.Location = new System.Drawing.Point(140, 110);
+            this.taglineMiddle.Name = "taglineMiddle";
+            this.taglineMiddle.Size = new System.Drawing.Size(532, 56);
+            this.taglineMiddle.TabIndex = 4;
+            this.taglineMiddle.Text = "Лучшая литература.";
             // 
-            // tagline2
+            // taglineTop
             // 
-            this.tagline2.AutoSize = true;
-            this.tagline2.Font = new System.Drawing.Font("Century Gothic", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tagline2.ForeColor = System.Drawing.Color.White;
-            this.tagline2.Location = new System.Drawing.Point(14, 74);
-            this.tagline2.Name = "tagline2";
-            this.tagline2.Size = new System.Drawing.Size(400, 47);
-            this.tagline2.TabIndex = 4;
-            this.tagline2.Text = "Русские классики!";
+            this.taglineTop.AutoSize = true;
+            this.taglineTop.Font = new System.Drawing.Font("Century Gothic", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.taglineTop.ForeColor = System.Drawing.Color.White;
+            this.taglineTop.Location = new System.Drawing.Point(14, 74);
+            this.taglineTop.Name = "taglineTop";
+            this.taglineTop.Size = new System.Drawing.Size(400, 47);
+            this.taglineTop.TabIndex = 4;
+            this.taglineTop.Text = "Русские классики!";
             // 
-            // tagline3
+            // taglineBottom
             // 
-            this.tagline3.AutoSize = true;
-            this.tagline3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
-            this.tagline3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tagline3.ForeColor = System.Drawing.Color.White;
-            this.tagline3.Location = new System.Drawing.Point(567, 166);
-            this.tagline3.Name = "tagline3";
-            this.tagline3.Size = new System.Drawing.Size(167, 25);
-            this.tagline3.TabIndex = 4;
-            this.tagline3.Text = "Нужные книги.";
+            this.taglineBottom.AutoSize = true;
+            this.taglineBottom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
+            this.taglineBottom.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.taglineBottom.ForeColor = System.Drawing.Color.White;
+            this.taglineBottom.Location = new System.Drawing.Point(567, 166);
+            this.taglineBottom.Name = "taglineBottom";
+            this.taglineBottom.Size = new System.Drawing.Size(167, 25);
+            this.taglineBottom.TabIndex = 4;
+            this.taglineBottom.Text = "Нужные книги.";
             // 
             // InsertInMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
-            this.Controls.Add(this.tagline3);
-            this.Controls.Add(this.tagline2);
-            this.Controls.Add(this.tagline1);
-            this.Controls.Add(this.iconPictureBox1);
+            this.Controls.Add(this.taglineBottom);
+            this.Controls.Add(this.taglineTop);
+            this.Controls.Add(this.taglineMiddle);
+            this.Controls.Add(this.iconPictureBoxBooks);
             this.Name = "InsertInMainMenu";
             this.Size = new System.Drawing.Size(764, 523);
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBoxBooks)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
-        private System.Windows.Forms.Label tagline1;
-        private System.Windows.Forms.Label tagline2;
-        private System.Windows.Forms.Label tagline3;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBoxBooks;
+        private System.Windows.Forms.Label taglineMiddle;
+        private System.Windows.Forms.Label taglineTop;
+        private System.Windows.Forms.Label taglineBottom;
     }
 }

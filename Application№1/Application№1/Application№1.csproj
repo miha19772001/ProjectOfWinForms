@@ -68,11 +68,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="InsertAboutUs.cs">
+    <Compile Include="InsertAboutMe.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="InsertAboutUs.Designer.cs">
-      <DependentUpon>InsertAboutUs.cs</DependentUpon>
+    <Compile Include="InsertAboutMe.Designer.cs">
+      <DependentUpon>InsertAboutMe.cs</DependentUpon>
     </Compile>
     <Compile Include="DB.cs">
       <SubType>Form</SubType>
@@ -92,16 +92,34 @@
     <Compile Include="InsertDataBase.Designer.cs">
       <DependentUpon>InsertDataBase.cs</DependentUpon>
     </Compile>
+    <Compile Include="InsertHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InsertHome.Designer.cs">
+      <DependentUpon>InsertHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="InsertInMainMenu.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="InsertInMainMenu.Designer.cs">
       <DependentUpon>InsertInMainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="InsertNovelty.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InsertNovelty.Designer.cs">
+      <DependentUpon>InsertNovelty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertPopularly.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InsertPopularly.Designer.cs">
+      <DependentUpon>InsertPopularly.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="InsertAboutUs.resx">
-      <DependentUpon>InsertAboutUs.cs</DependentUpon>
+    <EmbeddedResource Include="InsertAboutMe.resx">
+      <DependentUpon>InsertAboutMe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DB.resx">
       <DependentUpon>DB.cs</DependentUpon>
@@ -112,8 +130,17 @@
     <EmbeddedResource Include="InsertDataBase.resx">
       <DependentUpon>InsertDataBase.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InsertHome.resx">
+      <DependentUpon>InsertHome.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InsertInMainMenu.resx">
       <DependentUpon>InsertInMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertNovelty.resx">
+      <DependentUpon>InsertNovelty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertPopularly.resx">
+      <DependentUpon>InsertPopularly.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -139,12 +166,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BookShop.mdf">
+    <Content Include="Books.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="BookShop_log.ldf">
+    <Content Include="Books_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>BookShop.mdf</DependentUpon>
+      <DependentUpon>Books.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>

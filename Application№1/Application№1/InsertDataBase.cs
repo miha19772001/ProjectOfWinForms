@@ -36,35 +36,23 @@ namespace Application_1
 
             try
             {
-                SqlCommand addWriter = null;
-                SqlCommand addProduct = null;
+                SqlCommand addBooks = null;
+              
 
 
-                addWriter = new SqlCommand($"INSERT INTO [Writer] (Surname, Name, Middle_Name, Date_of_birth, Date_of_death)" +
-                    $"VALUES (@Surname, @Name, @Middle_Name, @Date_of_birth, @Date_of_death)", connection);
-                addProduct = new SqlCommand($"INSERT INTO [Product] (Name, Date_of_writing, Genre) " +
-                    $"VALUES (@Name, @Date_of_writing, @Genre)", connection);
+                addBooks = new SqlCommand($"INSERT INTO [Books] (Surname_Of_Writer, Name_Of_Writer, MiddleName_Of_Writer, Name_Of_Book, Genre)" +
+                    $"VALUES (@Surname_Of_Writer, @Name_Of_Writer, @MiddleName_Of_Writer, @Name_Of_Book, @Genre)", connection);
+               
 
+                //Addition information about table Books
+                addBooks.Parameters.AddWithValue("Surname_Of_Writer", textBoxSurnameOfWriter.Text);
+                addBooks.Parameters.AddWithValue("Name_Of_Writer", textBoxNameOfWriter.Text);
+                addBooks.Parameters.AddWithValue("MiddleName_Of_Writer", textBoxMiddleNameOfWriter.Text);
+                addBooks.Parameters.AddWithValue("Name_Of_Book", textBoxNameOfBook.Text);
+                addBooks.Parameters.AddWithValue("Genre", textBoxGenre.Text);
 
-                var date_of_birth = DateTime.Parse(textBoxDateOfBirth.Text);
-                var date_of_death = DateTime.Parse(textBoxDateOfDeath.Text);
-
-                //Addition information about Writer
-                addWriter.Parameters.AddWithValue("Surname", textBoxSurnameOfWriter.Text);
-                addWriter.Parameters.AddWithValue("Name", textBoxNameOfWriter.Text);
-                addWriter.Parameters.AddWithValue("Middle_Name", textBoxMiddleNameOfWriter.Text);
-                addWriter.Parameters.AddWithValue("Date_of_birth", $"{date_of_birth.Month}/{date_of_birth.Day}/{date_of_birth.Year}");
-                addWriter.Parameters.AddWithValue("Date_of_death", $"{date_of_death.Month}/{date_of_death.Day}/{date_of_death.Year}");
-
-                //Addition information about Product
-                
-                addProduct.Parameters.AddWithValue("Name", textBoxNameOfBook.Text);
-                addProduct.Parameters.AddWithValue("Date_of_writing", textBoxDateOfWriting.Text);
-                addProduct.Parameters.AddWithValue("Genre", textBoxGenre.Text);
-
-
-                addProduct.ExecuteNonQuery();
-                addWriter.ExecuteNonQuery();
+                addBooks.ExecuteNonQuery();
+               
 
                
 
@@ -77,11 +65,7 @@ namespace Application_1
                     textBoxSurnameOfWriter.Clear();
                     textBoxNameOfWriter.Clear();
                     textBoxMiddleNameOfWriter.Clear();
-                    textBoxDateOfBirth.Clear();
-                    textBoxDateOfDeath.Clear();
-
                     textBoxNameOfBook.Clear();
-                    textBoxDateOfWriting.Clear();
                     textBoxGenre.Clear();
                 }
             }
@@ -102,24 +86,23 @@ namespace Application_1
 
             if (string.IsNullOrEmpty(textBoxSearchForBook.Text) && string.IsNullOrEmpty(textBoxSearchForSurname.Text) && string.IsNullOrEmpty(textBoxSearchForName.Text))
             {
-                dataAdapter = new SqlDataAdapter($"SELECT Writer.Surname, Writer.Name, Writer.Middle_Name, Writer.Date_of_birth, Writer.Date_of_death, " +
-                $"Product.Name, Product.Date_of_writing, Product.Genre FROM Writer JOIN Product ON Writer.Surname = Product.Surname_Writer", connection);
+                dataAdapter = new SqlDataAdapter($"SELECT Surname_Of_Writer, Name_Of_Writer, MiddleName_Of_Writer, Name_Of_Book, Genre FROM Books", connection);
             }
             else if (!string.IsNullOrEmpty(textBoxSearchForBook.Text))
             {
-                dataAdapter = new SqlDataAdapter($"SELECT Writer.Surname, Writer.Name, Writer.Middle_Name, Writer.Date_of_birth, Writer.Date_of_death, " +
-                    $"Product.Name, Product.Date_of_writing, Product.Genre FROM Writer JOIN Product ON Writer.Surname = Product.Surname_Writer WHERE Product.Name LIKE N'{textBoxSearchForBook.Text}%'", connection);
+                dataAdapter = new SqlDataAdapter($"SELECT Surname_Of_Writer, Name_Of_Writer, MiddleName_Of_Writer, Name_Of_Book, Genre" +
+                    $" FROM Books WHERE Name_Of_Book LIKE N'{textBoxSearchForBook.Text}%'", connection);
 
             }
             else if (!string.IsNullOrEmpty(textBoxSearchForSurname.Text))
             {
-                dataAdapter = new SqlDataAdapter($"SELECT Writer.Surname, Writer.Name, Writer.Middle_Name, Writer.Date_of_birth, Writer.Date_of_death," +
-                    $" Product.Name, Product.Date_of_writing, Product.Genre FROM Writer JOIN Product ON Writer.Surname = Product.Surname_Writer WHERE Writer.Surname LIKE N'{textBoxSearchForSurname.Text}%'", connection);
+                dataAdapter = new SqlDataAdapter($"SELECT Surname_Of_Writer, Name_Of_Writer, MiddleName_Of_Writer, Name_Of_Book, Genre" +
+                    $" FROM Books WHERE Surname_Of_Writer LIKE N'{textBoxSearchForSurname.Text}%'", connection);
             }
             else if (!string.IsNullOrEmpty(textBoxSearchForName.Text))
             {
-                dataAdapter = new SqlDataAdapter($"SELECT Writer.Surname, Writer.Name, Writer.Middle_Name, Writer.Date_of_birth, Writer.Date_of_death," +
-                    $" Product.Name, Product.Date_of_writing, Product.Genre FROM Writer JOIN Product ON Writer.Surname = Product.Surname_Writer WHERE Writer.Name LIKE N'{textBoxSearchForName.Text}%'", connection);
+                dataAdapter = new SqlDataAdapter($"SELECT Surname_Of_Writer, Name_Of_Writer, MiddleName_Of_Writer, Name_Of_Book, Genre" +
+                    $" FROM Books WHERE Name_Of_Writer LIKE N'{textBoxSearchForName.Text}%'", connection);
             }
 
 
